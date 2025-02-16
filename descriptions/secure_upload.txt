@@ -1,0 +1,11 @@
+Why is file upload security important?
+
+Hackers can upload malicious PHP scripts disguised as images.
+File metadata can be manipulated for exploits.
+
+
+Best practices:
+
+Validate file type (mime_content_type()).
+Restrict file size and store in a secure directory.
+Prevent direct access to uploaded files.

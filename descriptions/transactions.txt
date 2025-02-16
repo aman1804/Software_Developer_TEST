@@ -1,0 +1,13 @@
+Why use transactions in e-commerce orders?
+
+A purchase involves multiple inserts: orders, items, payments.
+If one step fails, the data should be rolled back to maintain consistency.
+
+
+How transactions help:
+
+Ensures that either all queries execute or none if there's a failure.
+Prevents inconsistent data (e.g., order recorded but payment missing).
+Implementation in PHP:
+
+Use begin_transaction(), commit(), and rollback().

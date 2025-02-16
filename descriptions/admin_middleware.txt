@@ -1,0 +1,10 @@
+What is middleware?
+
+Middleware intercepts HTTP requests before reaching controllers.
+Used for authentication, logging, and security checks.
+
+
+Why create an admin middleware?
+
+Ensures only users with is_admin = 1 can access admin routes.
+Improves security and prevents unauthorized access.

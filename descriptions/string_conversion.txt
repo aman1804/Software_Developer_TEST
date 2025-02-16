@@ -1,0 +1,10 @@
+Why convert camelCase to sentence format?
+
+Improves readability in logs and UI.
+Useful for generating human-readable labels.
+
+
+Method:
+
+Use regex to identify uppercase letters and insert spaces before them.
+Convert the string to lowercase for consistency.

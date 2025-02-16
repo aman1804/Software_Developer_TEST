@@ -1,0 +1,8 @@
+Why add filtering in Filament tables?
+
+Helps users easily find specific data (e.g., filtering users by role).
+Improves UI experience and database performance.
+
+How it works:
+
+Use SelectFilter::make('role') to allow filtering.

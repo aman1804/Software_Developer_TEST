@@ -1,0 +1,9 @@
+Why add custom actions?
+
+Allows users to interact with records (e.g., approving posts).
+Prevents unnecessary page reloads.
+
+How it works:
+
+Define an action using Action::make('approve').
+Use AJAX to update the database without refreshing the page.

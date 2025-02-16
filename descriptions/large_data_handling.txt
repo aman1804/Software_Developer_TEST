@@ -1,0 +1,10 @@
+Challenges of handling a 5GB CSV file:
+
+High memory usage if all data is loaded at once.
+Slow database inserts if done row-by-row.
+
+Efficient Approach:
+
+Use batch processing (inserting multiple rows at a time).
+Use fgetcsv() instead of file_get_contents() to process data line by line.
+Use indexes in the database for faster insert operations.

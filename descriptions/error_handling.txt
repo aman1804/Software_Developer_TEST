@@ -1,0 +1,10 @@
+Why handle unpredictable JSON responses?
+
+JSON can have missing fields, causing undefined index errors in PHP.
+Invalid JSON can cause runtime errors.
+
+Best practices:
+
+Always check json_last_error() after decoding.
+Use isset() or null coalescing (??) to handle missing fields.
+Log errors using error_log() for debugging.

@@ -1,0 +1,14 @@
+Why is the query slow?
+
+The WHERE condition filters on status, which isn't indexed.
+Sorting (ORDER BY created_at DESC) is slow without an index.
+
+
+
+Solution:
+
+Create an index:
+
+CREATE INDEX idx_status_created_at ON orders (status, created_at DESC);
+
+This allows MySQL to quickly locate pending orders and sort them efficiently.

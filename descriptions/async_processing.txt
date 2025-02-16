@@ -1,0 +1,10 @@
+Why handle file uploads asynchronously?
+
+Uploads can be large and cause timeouts in PHP.
+Running tasks synchronously blocks the user experience.
+
+
+Solution:
+
+Use exec("php process_file.php > /dev/null 2>&1 &") to run in the background.
+Use message queues like RabbitMQ or Redis for handling uploads asynchronously.

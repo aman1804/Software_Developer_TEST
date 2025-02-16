@@ -1,0 +1,9 @@
+Why use queues in Laravel?
+
+Sending emails synchronously slows down user requests.
+Queues process tasks in the background, improving app responsiveness.
+
+How it works:
+
+Define a queue job using php artisan make:job.
+Use queue:work to process jobs asynchronously

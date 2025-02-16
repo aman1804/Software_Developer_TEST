@@ -1,0 +1,8 @@
+What’s wrong with the code?
+
+It allows SQL Injection, where an attacker can manipulate queries by injecting malicious SQL.
+
+Fix:
+
+Use prepared statements with parameterized queries to avoid injection risks.
+Bind input values securely before execution.

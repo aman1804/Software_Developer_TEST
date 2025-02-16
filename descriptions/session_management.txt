@@ -1,0 +1,11 @@
+Challenges of session management in high-traffic sites:
+
+PHP sessions by default are stored in files, causing performance issues.
+Load balancing becomes difficult if sessions are stored on a single server.
+
+
+Solution:
+
+Store sessions in Redis for faster read/write.
+Use sticky sessions if using load balancers.
+Configure PHP to use database-backed session storage if necessary.

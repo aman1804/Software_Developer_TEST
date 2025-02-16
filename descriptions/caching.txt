@@ -1,0 +1,9 @@
+Why use caching?
+
+Querying large datasets repeatedly slows down performance.
+Cache reduces database load and speeds up responses.
+
+Laravel caching methods:
+
+Cache::remember('key', time, function () { return DB::query(); })
+Use Redis or Memcached for efficient caching
